@@ -1,21 +1,30 @@
+
 class Displate:
     def __init__(self, link, size):
         self.link = link
         self.size = size
-'''
-class size_choice:
 
-    def size_options(self):
-        cart = 1
-        while addtocart <= 3:
-            if self.size == 'm':
-                    driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[1]/div[2]/img').click()
-            if self.size == 'l':
-                    driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[2]/div[2]/img').click()
-            if self.size == 'xl':
-                    driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[3]/div[2]/img').click()
-    
-            addtocart = driver.find_element_by_xpath('//*[@id="add-to-cart"]').click()
-            cart += 1
-'''
+class Shipping:
+    def __init__(self, first, last, address1, address2, zip, city, state, phone):
+        self.first = first
+        self.last = last
+        self.address1 = address1
+        self.address2 = address2
+        self.zip = zip
+        self.city = city
+        self.state = state
+        self.phone = phone
+
+
+
+
+#Step 1: Enter Displate URL and Size:
+displate1 = Displate('https://displate.com/displate/2155588', 'l')
+displate2 = Displate('https://displate.com/displate/2155645', 'l')
+displate3 = Displate('https://displate.com/displate/2155592', 'l')
+
+#Step 2: Enter shipping info
+info = Shipping('First', 'Last', 'Address', 'Address1', 'Zip', 'City', 'State', 'Phone')
+
+#Step 3: Go to Automation.py and set the quanity of Displates
 
