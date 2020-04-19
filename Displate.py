@@ -5,26 +5,27 @@ class Displate:
         self.size = size
 
 class Shipping:
-    def __init__(self, first, last, address1, address2, zip, city, state, phone):
-        self.first = first
-        self.last = last
+    def __init__(self, email, phone, name, address1, address2, city, state, zip_code,):
+        self.email = email
+        self.name = name
         self.address1 = address1
         self.address2 = address2
-        self.zip = zip
+        self.zip_code = zip_code
         self.city = city
         self.state = state
         self.phone = phone
 
+#Step 1: Run "chrome.exe --remote-debugging-port=9999 --user-data-dir="C;\automation" in the terminal
 
-
-
-#Step 1: Enter Displate URL and Size:
+#Step 2: Enter Displate URL and Size:
 displate1 = Displate('https://displate.com/displate/2155588', 'l')
-displate2 = Displate('https://displate.com/displate/2155645', 'l')
-displate3 = Displate('https://displate.com/displate/2155592', 'l')
+displate2 = Displate('https://displate.com/displate/2155645', 'm')
+displate3 = Displate('https://displate.com/displate/2155592', 'xl')
 
-#Step 2: Enter shipping info
-info = Shipping('First', 'Last', 'Address', 'Address1', 'Zip', 'City', 'State', 'Phone')
+#Step 3: Enter shipping info below (make a copy of the code)
+info = Shipping(
+    'Email', 'Phone', 'Name', 'Address1', 'Address2', 'City', 'State', '12345',
+)
 
-#Step 3: Go to Automation.py and set the quanity of Displates
+#Step 4: Go to Automation.py and set the quantity of Displates
 
