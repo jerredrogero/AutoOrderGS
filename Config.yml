@@ -1,0 +1,50 @@
+# How Many Displates Do You Need To Order?
+Displates: 3
+
+# Paste the links here:
+displate1: https://displate.com/displate/1805347
+displate2: https://displate.com/displate/1899186
+displate3: https://displate.com/displate/1805347
+displate4:
+displate5:
+displate6:
+displate7:
+displate8:
+displate9:
+displate10:
+
+# What's the size of each displate? Abbreviated (ex. "m", "l", "xl")
+size1: m
+size2: l
+size3: xl
+size4: 
+size5: 
+size6: 
+size7: 
+size8: 
+size9: 
+size10: 
+
+# Email of recipient
+Email: email
+
+# Phone number (keep inside double quotes)
+Phone: "123456789"
+
+# Full name
+Name: John Smith
+
+# Address Line 1
+Address1: 123 config st
+
+# Address Line 2 (Leave blank if needed)
+Address2:
+
+# City
+City: Austin
+
+# State (Abbreviated)
+State: TX
+
+# Zip Code (keep inside double quotes)
+Postal: "12345"
