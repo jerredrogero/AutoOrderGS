@@ -2,9 +2,9 @@
 Displates: 3
 
 # Paste the links here:
-displate1: https://displate.com/displate/1805347
-displate2: https://displate.com/displate/1899186
-displate3: https://displate.com/displate/1805347
+displate1: https://displate.com/displate/892142
+displate2: https://displate.com/displate/892142
+displate3: https://displate.com/displate/892142
 displate4:
 displate5:
 displate6:
@@ -14,9 +14,9 @@ displate9:
 displate10:
 
 # What's the size of each displate? Abbreviated (ex. "m", "l", "xl")
-size1: m
+size1: l
 size2: l
-size3: xl
+size3: l
 size4: 
 size5: 
 size6: 
@@ -25,26 +25,38 @@ size8:
 size9: 
 size10: 
 
+# Is the displate's finish gloss?
+finish1: "no"
+finish2: "no"
+finish3: "no"
+finish4: "no"
+finish5: "no"
+finish6: "no"
+finish7: "no"
+finish8: "no"
+finish9: "no"
+finish10: "no"
+
 # Email of recipient
-Email: email
+Email: marit.koeffers@web.de
 
 # Phone number (keep inside double quotes)
-Phone: "123456789"
+Phone: "4915782292010"
 
 # Full name
-Name: John Smith
+Name: Marit Köffers
 
 # Address Line 1
-Address1: 123 config st
+Address1: Poststraße 35
 
 # Address Line 2 (Leave blank if needed)
 Address2:
 
 # City
-City: Austin
+City: Ratingen
 
 # State (Abbreviated)
-State: TX
+State: 
 
 # Zip Code (keep inside double quotes)
-Postal: "12345"
+Postal: "40878"

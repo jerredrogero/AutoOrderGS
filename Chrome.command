@@ -1,0 +1,1 @@
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ chrome --remote-debugging-port=9999
