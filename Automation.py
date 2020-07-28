@@ -4,29 +4,92 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import yaml
+<<<<<<< Updated upstream
           
+=======
+from csv import writer
+import gspread
+from pprint import pprint
+from oauth2client.service_account import ServiceAccountCredentials
+
+scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
+creds = ServiceAccountCredentials.from_json_keyfile_name('client_secrets.json', scope)
+client = gspread.authorize(creds)
+sheet = client.open('Submissions').sheet1
+
+def nameF():
+   return sheet.cell(2,1).value
+name = nameF()
+def emailF():
+    return sheet.cell(2,3).value
+email = emailF()
+def phoneF():
+    return sheet.cell(2,4).value
+phone = phoneF()
+def countryF():
+    return sheet.cell(2,5).value
+country = countryF()
+def address1F():
+    return sheet.cell(2,6).value
+address1 = address1F()
+def address2F():
+    return sheet.cell(2,7).value
+address2 = address2F()
+def cityF():
+    return sheet.cell(2,8).value
+city = cityF()
+def stateF():
+    return sheet.cell(2,9).value
+state = stateF()
+def postalF():
+    return sheet.cell(2.10).value
+postal = postalF()
+def displateF():
+    return sheet.cell(2,11).value
+displate = displateF()
+def sizeF():
+    return sheet.cell(2,15).value
+size = sizeF()
+
+'''
+>>>>>>> Stashed changes
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9999")
 chrome_driver = "C:\selenium\chromedriver.exe"
 driver = webdriver.Chrome(options=chrome_options)
 driver.implicitly_wait(10)
 driver.get('https://displate.com/admin')
-
 '''
+
 email = driver.find_element_by_xpath('//*[@id="login-form"]/div[1]/div/input')
 email.send_keys()
 
 password = driver.find_element_by_xpath('//*[@id="login-form"]/div[2]/div/input')
 password.send_keys()
-'''
+
 
 # Clicks through admin portal
 orders = driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[6]/a').click()
 createnew = driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[6]/ul/li[5]/a').click()
+<<<<<<< Updated upstream
     
 with open ('config.yml', 'r') as stream:
     config = yaml.safe_load(stream)
 
+=======
+'''
+with open ('config.yml', 'r') as stream:
+    config = yaml.safe_load(stream)
+'''
+def m():
+    driver.find_element_by_xpath('//*[@id="product-size"]/div/label[1]/div').click()
+def l():
+    driver.find_element_by_xpath('//*[@id="product-size"]/div/label[2]/div').click()    
+def xl():
+    driver.find_element_by_xpath('//*[@id="product-size"]/div/label[3]/div').click()
+def gloss():
+    driver.find_element_by_xpath('//*[@id="react-product-page"]/div/div[1]/section/div[2]/div[2]/div[1]/div[2]/label[2]').click()
+>>>>>>> Stashed changes
 def autoOrder1():
     displate1 = config['displate1']
     driver.get(displate1)
@@ -36,7 +99,14 @@ def autoOrder1():
     if config['size1'] == 'l':
         driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[2]/div[2]').click()
     if config['size1'] == 'xl':
+<<<<<<< Updated upstream
         driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[3]/div[2]').click()
+=======
+        xl()
+    if finish1 =='yes':
+        gloss()
+'''
+>>>>>>> Stashed changes
 def autoOrder2():
     displate2 = config['displate2']
     driver.get(displate2)
@@ -126,8 +196,54 @@ def autoOrder10():
     if config['size10'] == 'l':
         driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[2]/div[2]').click()
     if config['size10'] == 'xl':
+<<<<<<< Updated upstream
         driver.find_element_by_xpath('//*[@id="product-size"]/div[2]/div[3]/div[2]').click()
 
+=======
+        xl()
+    if finish10 =='yes':
+        gloss()
+def autoOrder11():
+    displate11 = config['displate11']
+    driver.get(displate11)
+    size11 = config['size11']
+    finish11 = config['finish11']
+    if config['size11'] == 'm':
+        m()
+    if config['size11'] == 'l':
+        l()
+    if config['size11'] == 'xl':
+        xl()
+    if finish11 =='yes':
+        gloss()
+def autoOrder12():
+    displate12 = config['displate12']
+    driver.get(displate12)
+    size12= config['size12']
+    finish12 = config['finish12']
+    if config['size12'] == 'm':
+        m()
+    if config['size12'] == 'l':
+        l()
+    if config['size12'] == 'xl':
+        xl()
+    if finish12 =='yes':
+        gloss()
+def autoOrder13():
+    displate13 = config['displate13']
+    driver.get(displate13)
+    size13 = config['size13']
+    finish13 = config['finish13']
+    if config['size13'] == 'm':
+        m()
+    if config['size13'] == 'l':
+        l()
+    if config['size13'] == 'xl':
+        xl()
+    if finish13 =='yes':
+        gloss()
+'''
+>>>>>>> Stashed changes
 cart = 1     
 while cart <= config['Displates']:    
     if cart == 1:
@@ -198,6 +314,7 @@ state.send_keys(config['State'])
 zip_code = driver.find_element_by_xpath('/html/body/div[2]/div[2]/div/div/div[4]/form/div[9]/div[2]/input')
 zip_code.clear()
 zip_code.send_keys(config['Postal'])
+<<<<<<< Updated upstream
 
 '''
 TODO:
@@ -205,3 +322,5 @@ figure out pyinstaller outside files
 Bundle into Docker
 
 '''
+=======
+>>>>>>> Stashed changes
