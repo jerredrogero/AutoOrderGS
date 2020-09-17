@@ -35,7 +35,7 @@ displate30:
 
 
 
-# What's the size of each displate? Abbreviated (ex. "m", "l", "xl")
+# What's the size of each displate? Abbreviated lowercase (ex. "m", "l", "xl")
 size1: 
 size2: 
 size3: 
@@ -67,7 +67,7 @@ size28:
 size29: 
 size30: 
 
-# If you'd like the finish to be matte leave as is, if not change to "yes"
+# If you'd like the finish to be matte leave as is, if gloss change to "yes"
 finish1: "no"
 finish2: "no"
 finish3: "no"
