@@ -8,9 +8,12 @@ verify_ssl = true
 [packages]
 selenium = "*"
 pyyaml = "*"
+<<<<<<< HEAD
 gspread = "*"
 oauth2client = "*"
 webdriver-manager = "*"
+=======
+>>>>>>> master
 
 [requires]
 python_version = "3.8"

@@ -15,7 +15,6 @@ sheet = client.open('Submissions').sheet1
 
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9999")
-#chrome_driver = "C:\selenium\chromedriver.exe"
 driver = webdriver.Chrome("C:\selenium\chromedriver.exe", options=chrome_options)
 driver.implicitly_wait(10)
 driver.get('https://displate.com/admin')
