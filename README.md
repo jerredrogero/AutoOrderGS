@@ -1,0 +1,1 @@
+Automated internal orders at my current job. Form submission were exported to a google sheet that this script was hooked up to through the google sheet API. Selenium goes through the order details and adds them to the cart. Then fills in the shipping info with the submissions from the google sheet.
